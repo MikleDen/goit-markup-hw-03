@@ -4,11 +4,24 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
 
 :root {
   --brand-color: #4d5ae5;
   --dark-color: #2e2f42;
   --text-color: #434455;
+  --accent-color: #e7e9fc;
+  --white-color: #ffffff;
+  --light-color: #f4f4fd;
 }
 
 ul li {
@@ -16,10 +29,8 @@ ul li {
 }
 
 body {
-  box-sizing: border-box;
   font-family: 'Roboto', 'Verdana', sans-serif;
   color: var(--text-color);
-  font-weight: 400;
   font-size: 16px;
   text-decoration: none;
 }
@@ -27,14 +38,15 @@ a {
   text-decoration: none;
 }
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1, 33;
+  line-height: 1.33;
   text-transform: uppercase;
   color: var(--dark-color);
   text-decoration: none;
+  letter-spacing: 0.03em;
 }
 .logo > span {
   color: var(--brand-color);
@@ -45,7 +57,8 @@ a {
   color: var(--dark-color);
   font-weight: 600;
   font-size: 16px;
-  line-height: 1, 5;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .header-list-item:hover,
 .header-list-item:focus {
@@ -56,6 +69,7 @@ a {
 }
 .header-info-item {
   color: var(--text-color);
+  letter-spacing: 0.03em;
 }
 .header-info-item:hover,
 .header-info-item:focus {
@@ -64,24 +78,28 @@ a {
 .first-section-title {
   font-weight: 600;
   font-size: 56px;
-  line-height: 1, 07;
-  color: #ffffff;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
   background-color: var(--dark-color);
 }
 .button {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--brand-color);
-  font-size: 600;
+  font-weight: 600;
   font-size: 16px;
-  line-height: 1, 18;
+  line-height: 1.18;
+  letter-spacing: 0.04em;
+  font-family: inherit;
 }
 .section-list {
 }
 .title-two {
   font-weight: 600;
   font-size: 20px;
-  line-height: 1, 2;
+  line-height: 1.2;
   color: var(--dark-color);
+  letter-spacing: 0.02em;
 }
 
 .cards-item > a > .title-two:hover,
@@ -95,6 +113,7 @@ a {
   line-height: 40px;
   text-transform: capitalize;
   color: var(--dark-color);
+  letter-spacing: 0.02em;
 }
 .photo-list {
 }
@@ -105,14 +124,21 @@ a {
 }
 .team-list-item {
 }
+
+.team-list-text {
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  line-height: 1.5;
+}
 .footer {
   background-color: var(--dark-color);
 }
 .footer > .logo {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-text {
-  color: #e7e9fc;
+  color: var(--accent-color);
+  letter-spacing: 0.02em;
 }
 
 .filter-list {
@@ -123,18 +149,25 @@ a {
   visibility: hidden;
 }
 .filter-list-item > button {
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
-  line-height: 1, 5;
+  line-height: 1.5;
   color: var(--brand-color);
   cursor: pointer;
-  background-color: #f4f4fd;
+  background-color: var(--light-color);
+  letter-spacing: 0.04em;
 }
 .filter-list-item :hover {
   background-color: var(--brand-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 .cards {
 }
 .cards-item {
+}
+.cards-text {
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
