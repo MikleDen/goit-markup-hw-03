@@ -13,7 +13,10 @@ h6,
 p,
 ul {
   margin: 0;
+  padding: 0;
 }
+
+
 
 :root {
   --brand-color: #4d5ae5;
@@ -34,6 +37,20 @@ body {
   font-size: 16px;
   text-decoration: none;
 }
+
+.section{
+  width: 1158px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+
+}
+
+
 a {
   text-decoration: none;
 }
@@ -47,25 +64,43 @@ a {
   color: var(--dark-color);
   text-decoration: none;
   letter-spacing: 0.03em;
+
+  margin-right: 77px;
 }
 .logo > span {
   color: var(--brand-color);
 }
 .header-list {
+  display: flex;
 }
-.header-list-item {
+
+
+.header-list-link {
   color: var(--dark-color);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+ 
 }
-.header-list-item:hover,
-.header-list-item:focus {
+
+.header-list-item{
+ 
+}
+.header-list>.header-list-item:not(:last-child){
+  margin-right: 40px;
+}
+
+.header-list-link:hover,
+.header-list-link:focus {
   color: var(--brand-color);
 }
 
 .header-info {
+  display: flex;
+  margin-left: auto;
 }
 .header-info-item {
   color: var(--text-color);
@@ -81,8 +116,13 @@ a {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-color);
+ 
+}
+
+.first{
   background-color: var(--dark-color);
 }
+
 .button {
   color: var(--white-color);
   background-color: var(--brand-color);
