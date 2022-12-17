@@ -38,15 +38,17 @@ body {
   text-decoration: none;
 }
 
-.section{
+.container{
   width: 1158px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left:  auto;
+  margin-right: auto;
 }
 
 .header-container {
   display: flex;
+  align-items: center;
 
 }
 
@@ -81,12 +83,13 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 24px;
- 
+ display: block;
+ padding-top: 24px;
+ padding-bottom: 24px;
 }
 
 .header-list-item{
+  
  
 }
 .header-list>.header-list-item:not(:last-child){
@@ -102,13 +105,16 @@ a {
   display: flex;
   margin-left: auto;
 }
-.header-info-item {
+.info-link {
   color: var(--text-color);
   letter-spacing: 0.03em;
 }
-.header-info-item:hover,
-.header-info-item:focus {
+.info-link:hover,
+.info-link:focus {
   color: var(--brand-color);
+}
+.header-info .info-item +.info-item{
+  margin-left: 40px;
 }
 .first-section-title {
   font-weight: 600;
@@ -116,14 +122,22 @@ a {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-color);
- 
+  margin-bottom: 48px;
+  
 }
 
 .first{
   background-color: var(--dark-color);
+  
+}
+.one{
+  text-align: center;
+  padding-top: 192px;
+  padding-bottom: 192px;
 }
 
 .button {
+  
   color: var(--white-color);
   background-color: var(--brand-color);
   font-weight: 600;
@@ -131,8 +145,31 @@ a {
   line-height: 1.18;
   letter-spacing: 0.04em;
   font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 16px 32px;
+min-width: 170px;
+text-align: center;
+cursor: pointer;
 }
 .section-list {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+.section-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.features{
+
+ 
+}
+.section{
+  padding-bottom: 120px;
+}
+.with-paddingtop{
+  padding-top: 120px;
 }
 .title-two {
   font-weight: 600;
@@ -140,6 +177,7 @@ a {
   line-height: 1.2;
   color: var(--dark-color);
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .cards-item > a > .title-two:hover,
@@ -154,17 +192,29 @@ a {
   text-transform: capitalize;
   color: var(--dark-color);
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
 }
 .photo-list {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
 }
 .photo-list-item {
 }
 
 .team-list {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
 }
 .team-list-item {
 }
-
+.team-text{
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .team-list-text {
   letter-spacing: 0.02em;
   color: var(--text-color);
