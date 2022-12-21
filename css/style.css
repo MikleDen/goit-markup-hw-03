@@ -242,6 +242,8 @@ a {
   margin-bottom: 16px;
   display: block;
   margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .footer-text {
   color: var(--accent-color);
